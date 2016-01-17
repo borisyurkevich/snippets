@@ -1,4 +1,5 @@
 // Launch something with a delay
+// Credits http://stackoverflow.com/a/29317035/1162044
 
 import Foundation
 
