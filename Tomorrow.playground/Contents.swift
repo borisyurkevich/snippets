@@ -7,6 +7,19 @@ import Foundation
 import UIKit
 
 let cal = Calendar.current
-let dateComponents = NSDateComponents()
-dateComponents.day = 1
-let tomorrow = cal.nextDate(after: Date(), matchingHour: 0, minute: 1, second: 0, options: .matchNextTime)
+let date = Date()
+let morning = cal.startOfDay(for: date as Date)
+
+// Show Alert
+let error = NSError.init(coder: NSCoder()
+let alert = UIAlertController(title: error?.localizedDescription, message: error?.localizedFailureReason, preferredStyle: .Alert)
+let ok = UIAlertAction(title: NSLocalizedString("OK", comment: "alert button"), style: .Default, handler: nil)
+alert.addAction(ok)
+self.presentViewController(alert, animated: true, completion: nil)
+
+
+// Main
+
+dispatch_async(dispatch_get_main_queue(),{
+    // Code...
+})
