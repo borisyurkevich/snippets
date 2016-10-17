@@ -1,15 +1,27 @@
 import Foundation
 import UIKit
 
-// Tomorrow
+//
+// Round NSTimeInterval to seconds and milliseconds double
+//
 
-let cal = Calendar.current
-let date = Date()
-let morning = cal.startOfDay(for: date as Date)
+let msIn1️⃣Sec = 1000.0 // Milliseconds in one second
+
+let x = 3.07314896583557
+let y = 3.93281102180481
+
+// Cutting number,
+// also possible with string formatter
+// this is not precise
+let intervalInSeconds = Int(y)
+let msLeft = Int(y.truncatingRemainder(dividingBy:1) * msIn1️⃣Sec)
+
+// Real rounding to milliseconds
+let realMs = Double(round(msIn1️⃣Sec * x) / msIn1️⃣Sec)
 
 //
 // Delay Function
-// 
+//
 // Launch something with a delay
 // Credits http://stackoverflow.com/a/29317035/1162044
 
@@ -28,22 +40,12 @@ delay(delay: boilingWaterSpeedInSeconds) {
 }
 
 //
-// Round NSTimeInterval to seconds and milliseconds double
+// Tomorrow
 //
 
-let msIn1️⃣Sec = 1000.0 // Milliseconds in one second
-
-let x = 3.07314896583557
-let y = 3.93281102180481
-
-// Cutting number,
-// also possible with string formatter
-// this is not precise
-let intervalInSeconds = Int(y)
-let msLeft = Int(y.truncatingRemainder(dividingBy:1) * msIn1️⃣Sec)
-
-// Real rounding to milliseconds
-let realMs = Double(round(msIn1️⃣Sec * x) / msIn1️⃣Sec)
+let cal = Calendar.current
+let date = Date()
+let morning = cal.startOfDay(for: date as Date)
 
 //
 // Show Alert
