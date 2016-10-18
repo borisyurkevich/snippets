@@ -56,3 +56,9 @@ let alert = UIAlertController(title: error.localizedDescription, message: error.
 let ok = UIAlertAction(title: NSLocalizedString("OK", comment: "alert button"), style: .default, handler: nil)
 alert.addAction(ok)
  // self.presentViewController(alert, animated: true, completion: nil)
+
+//
+// App Name
+//
+
+let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName")
