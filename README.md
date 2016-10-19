@@ -8,7 +8,7 @@ Updated for Swift 3.
 ## Actions.
 
 ### Round time interval.
-Round NSTimeInterval to seconds and milliseconds double.
+Round `NSTimeInterval` to seconds and milliseconds `double`.
 
 ### Delay function.
 Launch something with a delay.
