@@ -22,3 +22,7 @@ Show alert from error.
 Test difference between locales and how they render time and date format.
 Get am / pm symbol.
 Create a date for of the beginning of a day.
+
+### App Name.
+Read app name in the code. Great for user facing text when you don't want to hard
+code app name because it can change in the future.
