@@ -1,6 +1,7 @@
 # ✂️ Snippets.
 
-Just a useful code snippets that I would like to reuse in my projects. Each action has separate Xcode playground.
+Just a useful code snippets that I would like to reuse in my projects. 
+All of them in a single Xcode Playground.
 
 Updated for Swift 3.
 
