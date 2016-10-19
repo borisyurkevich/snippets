@@ -58,6 +58,26 @@ alert.addAction(ok)
  // self.presentViewController(alert, animated: true, completion: nil)
 
 //
+// Various Date Operations
+//
+
+var df = DateFormatter()
+df.amSymbol
+
+let usLocale = Locale(identifier: "en_US")
+let gbLocale = Locale(identifier: "en_GB")
+let template = "yMMMMd"
+
+df.locale = usLocale
+df.timeStyle = .short
+
+let time = df.string(from: Date())
+
+let calendar = NSCalendar.current
+let canonDate = Date(timeInterval: 34860, since: calendar.startOfDay(for: Date()))
+let canonTime = df.string(from: canonDate)
+
+//
 // App Name
 //
 
